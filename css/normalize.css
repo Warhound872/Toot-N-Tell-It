@@ -1,0 +1,441 @@
+/*                         EXPLAINING COMMENTS
+
+These are comments in CSS!!!
+
+The text you are currently looking at is what is called a "comment". This text can not be seen be someone viewing this site and does not affect how the site works. These comments are used for others developers and yourself to view at your leisure. They help in organizing code and making it clear why a certain part of a website may be their. 
+
+
+"/*"  - The text in the previous quotes is the beginning of a comment or an opening "tag". 
+
+The text in the subsequent quotes is the end of a comment or a closing "tag" " */   
+    
+/* This is what an entire comment might look like  */ 
+
+
+/**********************************
+GENERAL
+***********************************/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+  max-width: 940px;
+  /*Center content*/
+  margin: 0 auto;
+  /*0 padding top/bottom 5% left and right*/
+/*  padding: 0 5%;*/
+  padding: 10% 5%;
+  
+}
+
+/*   Center boxes , then but one box to the left and one to the right   */
+.container{
+    
+    text-align: center;
+    width:85%;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+/*Links don't have underline*/
+a {
+  text-decoration: none;
+}
+
+/*Fill width of parent container */
+/* Helps to fix the images */
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+/* Get some space from the top of the page and the the main content. This makes sure the nav doesn't cover up any displayed content*/
+.allContent{
+    padding-top: 125px;
+}
+
+
+/**********************************
+HEADING
+***********************************/
+
+header {
+  float: left;
+/*top right bottom left
+     top
+  left  right
+     bottom
+  */
+  margin: 0 0 30px 0;
+
+  /*since it was floated it doesn't have an explicit width*/
+  width: 100%;
+/*  Create a fixed nav bar  */
+  position:fixed; 
+}
+
+#logo {
+  float: left;
+  margin: 10px;
+  padding-left:25px;
+
+}
+
+h1 {
+  font-family: 'Changa One', sans-serif;
+  /* top bottom, left right*/
+  margin: 15px 0;
+/*  em - relative unit of measurement .
+    Adjustisting font size relative of default size */
+  font-size: 1.75em;
+  /*Unbold head line*/
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  /*top lr bottom*/
+  margin: -5px 0 0;
+  /*Unbold text*/
+  font-weight: normal;
+}
+
+
+
+/**********************************
+NAVIGATION
+***********************************/
+
+nav {
+  text-align: right;
+  padding: 10px 0;
+
+
+}
+
+nav ul {
+  /*We don't want bullet points - just to make sure*/
+  list-style: none;
+  /* bottom/top -- l/r */
+  margin: 0 10px;
+  padding: 0;
+}
+
+ /*block - take up space on page and will push other things out of the way*/
+  /*inline - mostly text, appears on the same line as the rest of the text*/
+  /*inline-block- have items side by side, but will retain a width and height*/
+
+nav li {
+  display: inline-block;
+}
+
+/*easier to click on the links*/
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  /*the footer is put back where it belongs*/
+  clear: both;
+  padding-top: 50px;
+  /* light grey*/
+  color: #ccc;
+}
+
+/*make social icons smaller*/
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+
+/**********************************
+PAGE: MAIN 
+***********************************/
+
+/* Centering the main image and h1 */
+.topContent{
+    text-align: center; 
+    margin-top: 50px;
+
+}
+.topContent h1{
+    margin-bottom: 25px;
+    /* Change how big the text appears */
+    font-size:75px; 
+
+}
+.topContent img{
+    width:80%; 
+}
+
+/*The h1 was creating some space between the nav and the top of the page*/
+h1{
+    margin-top: 0;
+}
+
+
+/*
+top and bottom margins are 0px
+right and left margins are 5%
+margin: (top/bottom)px (left/right)px; 
+*/
+.leftBox, .rightBox{
+        float:left;
+        width:38%;
+        margin: 2%  2%;
+        padding:0px 2%;
+        border:2px solid ;
+        text-align: left; 
+        height:225px; 
+}
+
+.rightBox{
+    margin-left: 8%;
+}
+
+#theImage{
+    width:20%;
+    height:20%;
+    padding-top: 0%;
+}
+
+
+/**********************************
+PAGE: FOOD GALLERY 
+***********************************/
+
+.gallery h1 {
+    text-align: center; 
+    width:100%; 
+    /* Changes how big the text appears */
+    font-size:75px;
+
+    
+}
+
+
+/*This set the images to display correctly */
+#gallery {
+  margin: 0;
+  padding: 0;
+  /*We don't want bullet points*/
+  list-style: none;
+
+}
+
+/*Put the images into two columns*/
+#gallery li {
+/*  Position image to display side by side  */
+  float: left;
+/* Space that each image takes up */
+  width: 45%;
+/*Space on each side of image (2.5 * 4) = 10% */
+  margin: 2.5%;
+}
+
+/*    Change the height and width of the image yourself
+This way it doesn't matter what the images height/width is 
+it is set in the css
+*/
+#gallery li img{
+ 
+  height:400px;
+  width:900px;
+}
+
+/*select the paragraphs and change color and size*/
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+}
+
+
+
+
+/**********************************
+    food.html
+***********************************/
+.allContent{
+  
+ padding-top:60px; 
+}
+#foodGallery{
+  
+  text-align:center;
+  /*Uncomment these colors to view what you are changing!*/
+/*  background-color:orange;*/
+  float:left;
+  margin:5% 10%;
+}
+#foodGallery h1{
+  font-size:2.75em;
+}
+
+#foodContainer{
+ 
+/*    background-color:lightgreen;*/
+  float:left;
+  margin: 5% 10%;
+  padding:0;
+
+}
+
+
+ 
+
+
+/**********************************
+PAGE: CONTACT    
+
+This section is added as an additional piece
+of code and will be used later in the presentation.
+
+You will need to uncomment your code to view these changes.
+Feel free to play around with this code!!
+***********************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/*reposition below images*/
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  /*Only display the background once*/
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  /* give space to the left of icons  */
+  padding: 0 0 0 30px;
+  /* give some room for the top and bottom of the images  */
+  margin: 0 0 10px;
+}
+
+
+/*edit the hrefs of each list item on the contact page*/
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+/*
+top and bottom margins are 0px
+right and left margins are 5%
+margin: (top/bottom)px (left/right)px; 
+*/
+.contactR, .contactL{
+
+    float:left;
+    margin: 2%  2%;
+    text-align: left; 
+}
+
+
+.contactL{
+        width:30%; 
+    float:left; 
+}
+
+.contactR{
+    width:40%; 
+    float:right; 
+}
+
+/*Edit image*/
+#bottomImage{
+    width:60%;
+
+}
+
+
+
+
+/**********************************
+COLORS
+***********************************/
+/*
+    Colors: 
+
+    #247BA0    - Dark blue
+    #70C1B3    - Light Green
+    #B2DBBF    - Lighter Green
+    #F3FFBD    - Light Yellow
+    #FF1654    - Pinkish Redish
+                                  */
+
+
+/* site body */
+body {
+  background-color: #247BA0;
+  color: #F3FFBD;
+}
+
+/*  header */
+header {
+  background: #70C1B3;
+  border-color: #B2DBBF;
+}
+
+/*nav background for mobile devices */
+nav {
+  background: #70C1B3;
+}
+
+/* logo text */
+h1, h2 {
+  color: #F3FFBD;
+}
+
+/* links */
+a {
+  color: #F3FFBD;
+}
+
+/* nav link */
+/*nav link that has been clicked before*/
+nav a, nav a:visited {
+  color: #F3FFBD;
+}
+
+/* selected nav link once it is hovered over */
+nav a.selected, nav a:hover {
+  color: #FF1654;
+}
+
+
+/*    background color for gallery list items*/
+#gallery li{
+  
+    background-color: #f5f5f5;
+}
+/*    color of text of gallery items*/
+#gallery li p{
+  color:#4F4F4F;
+}

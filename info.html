@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Toot 'N' Tell It</title>
+    <link rel= "stylesheet" href="css/main.css">
+  <link rel= "stylesheet" herf="css/normalize.css">
+  <link rel= "stylesheet" herf="css/responive.css">
+  </head>
+  <body>
+   <header>
+    <h1>Toot 'N' Tell It</h1>
+     <h2>Call Us</h2>
+    </header>
+   <nav>
+     <ul>
+  <li><a href="index.html">Home</a></li>
+        <li><a href="breakfast.html">Breakfast</a></li>
+     <li><a href="lunch.html">Lunch/Dinner</a></li>
+       <li><a href="open.html">Opening Hours</a></li>
+       <li><a href="info.html">Call Us</a></li>
+       <li><a href="history.html">History</a></li>
+     </ul>
+    </nav>
+   <section>
+     <p>Hello! If you would like to get in contact with us, and would like to stay at home we have several ways for you to do so. One way that you can contact us is by calling 731-692-3452 and leave us a message or make an order in advance. If you would just like find out what other people think about our food and service, or you want leave a comment of your own, you can scroll down to the comment section below. If you would like to find out more about us you can click on the Facebook icon at the bottom of the page to go to our Facebook page.   </p>
+     <ul>
+        <form>
+         Name: <input type="text" size="30" /><br /><br />  
+         Email: <input type="text" size="30" /><br /><br />  
+          Comment:<br />
+  <textarea name='comment' id='comment'></textarea><br />
+
+  <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
+
+  <input type='submit' value='Submit' />
+          <form action="mailto:98tnewsome@gmail.com" method="POST" enctype="text/plain">
+            </form>
+        </form>
+     </ul>
+    </section>
+       <a href="https://www.facebook.com/pages/Toot-Tell-IT/114344865264443"><img src="img/facebook-wrap.png" alt"" class="facebook"></a>
+   <footer>
+       <div>
+     <p>
+       &copy;2017
+       </p>
+     </div>
+    </footer>
+  </body>
+</html>

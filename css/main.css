@@ -1,0 +1,112 @@
+h1{
+  text-align:center;
+    color: darkred;
+}
+nav li, nav a{
+  text-align:center;
+  display: inline;
+  font-family: 'Lemonada', cursive;
+  color:tan;
+  text-decoration:none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+nav{
+  color:black;
+  text-align:center;
+    background-color:brown;
+}
+h2{
+text-align:center;
+font-family: 'Lemonada', cursive; 
+color:darkred;
+}
+body{
+  background-image: url("../img/royal-white.jpg");
+font-size:25px;  
+}
+p{
+  color: darkred;
+  font-family: 'Passion One', cursive;
+}
+img{
+ size:70%;
+ border-radius:40%;
+ width:50%;
+}
+form{
+font-family: 'Lemonada', cursive; 
+color:darkred;
+}
+.fish{
+  background-image: url("../img/royal-white.jpg"); 
+font-size:25px;
+font-family: 'Lemonada', cursive; 
+color:darkred;
+}
+.foodlist{
+  text-align:center;
+}
+.list{
+  text-align:center;
+}
+a:link{
+  color:gold;
+}
+a:hover{
+  color:lightblue;
+}
+a:active{
+  color:white;
+}
+.home {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.pharaoh{
+ size:50%;
+ border-radius:40%;
+ width:50%;
+ margin-left: auto;
+ margin-right: auto;
+ display: block; 
+}
+.facebook{
+  size:15%;
+  border-radius:15%;
+  width:5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+footer{
+  text-align:center;
+}
+.breakfast{
+ size:100%;
+ border-radius:50%;
+ height: 200px;
+ margin:auto;
+ width:auto;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+} 
+
+.lunch{
+ size:100%;
+ border-radius:50%;
+ height: 200px;
+ margin:auto;
+ width:auto;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+}
+table{
+  margin: auto;
+  text-align:center;
+  
+}
